@@ -8,7 +8,7 @@ $phone=$_POST['phone'];
 $tea_email=$_POST['tea_email'];
  
 $mysqli->query("update teacher set tea_name='$tea_name', gender='$gender', 
-age='$age', phone='$phone', tea_email='$post' where tea_id=$tea_id");
+age='$age', phone='$phone', tea_email='$tea_email' where tea_id=$tea_id");
  
  
 // // Set a constant

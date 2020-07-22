@@ -49,7 +49,7 @@ $erow=$edit->fetch_assoc();
                                 <label style="position:relative; top:7px;">Province:</label>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text" name="address" class="form-control"
+                                <input type="text" name="province" class="form-control"
                                     value="<?php echo $erow['province']; ?>" required>
                             </div>
                         </div>

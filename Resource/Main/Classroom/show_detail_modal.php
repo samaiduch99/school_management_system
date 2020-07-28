@@ -15,15 +15,6 @@ $erow=$edit->fetch_assoc();
 ?>
                 <div class="container-fluid">
                     <form method="POST" action="update.php?id=<?php echo $erow['id']; ?>" enctype="multipart/form-data">
-
-                        <!-- <div class="row">
-                            <div class="col-lg-12" align="center">
-                                <php $img = "http://localhost/php-crud-classroom/profile_images/".$row['id']. ".jpg";?>
-                                <img src='<php echo $img ?>' height="150px" width="170px" />
-
-                            </div>
-
-                        </div> -->
                         <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-4" align="left">

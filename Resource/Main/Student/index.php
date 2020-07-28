@@ -79,7 +79,7 @@
                                 <!-- dark Logo text -->
                                 <img src="../../../assets/images/student_image.jpg" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo text -->
-                                <img src="../../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                
                             </span>
                         </a>
                     </div>
@@ -125,32 +125,13 @@
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                       <a href="../../login.php">Log Out</a>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                            </div>
-                        </li> -->
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right" style="margin-top: 15px;">
+                        <a href="../../logout.php" class="btn btn-danger btn-xs" style="margin-right: 12px;">Log Out</a>
+                        <a href="../../reset-password.php" class="btn btn-warning btn-xs">Rest</a>
                     </ul>
                 </div>
             </nav>
         </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <aside class="left-sidebar" data-sidebarbg="skin5">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
@@ -163,12 +144,7 @@
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
-                        <!-- <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                <i class="mdi mdi-account-network"></i>
-                                <span class="hide-menu">Profile</span>
-                            </a>
-                        </li> -->
+                    
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../Teacher/index.php" aria-expanded="false">
                                 <i class="mdi mdi-arrange-bring-forward"></i>
@@ -205,33 +181,15 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="Center">
                 <div class="List" style="text-align: center;">
-                   <h1>List Of Student</h1>
+                   <h1>List Of Students</h1>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- <div class="row header col-sm-6">
-                <span class="pull-center" style="text-align:center" >
-                <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm">
-                    <span class="glyphicon glyphicon-plus"></span> Add New
-                </a></span>
-            </div>     -->
             <div class="container-fluid">
 
                 <!-- <div class="row header col-sm-6"> -->
@@ -239,12 +197,6 @@
                 <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm">
                     <span class="glyphicon glyphicon-plus"></span> Add New
                 </a></span><br><br>
-               <!-- </div>     -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <!-- Row -->
-                
 
             <div style="height: -20px;"  ></div>
             <table class="table table-striped table-bordered table-hover " style="text-align:center" id="empTable">
@@ -267,9 +219,6 @@
                     <th>
                         <center>Subject</center>
                     </th>
-                    <!-- <th>
-                        <center>Picture</center>
-                    </th> -->
                     <th>
                         <center>Action</center>
                     </th>
@@ -288,7 +237,6 @@ while($row=$result->fetch_assoc()){
                         <td><?php echo $row['address']; ?></td>
                         <td><?php echo $row['phone']; ?></td>
                         <td><?php echo $row['post']; ?></td>
-                        <!-- <td> <img src='?php echo $img ?>' height="50px" width="70px" /></td> -->
                         <td>
                             <a href="#detail<?php echo $row['id']; ?>" data-toggle="modal"
                                 class="btn btn-success btn-sm">
@@ -315,17 +263,7 @@ while($row=$result->fetch_assoc()){
                 </tbody>
             </table>    
              <?php include('show_add_modal.php'); ?>
-                <!-- Row -->
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+              
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -337,21 +275,7 @@ while($row=$result->fetch_assoc()){
                 All Rights Reserved by Team. Designed and Developed by
                 <a href="https://www.passerellesnumeriques.org/en/">PNC</a>.
             </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
-     
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <!-- <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script> -->
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>

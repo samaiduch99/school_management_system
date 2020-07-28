@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/student_image.jpg">
-    <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Student Management System</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -50,7 +50,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <div class="navbar-brand"  style="height: 0px; margin-left: auto;">
+                    <div class="navbar-brand" style="height: 0px; margin-left: auto;">
                         <a href="index.html" class="logo">
                             <!-- Logo icon -->
                             <b class="logo-icon">
@@ -77,8 +77,7 @@
                     <!-- ============================================================== -->
                     <!-- Toggle which is visible on mobile only -->
                     <!-- ============================================================== -->
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="ti-more"></i>
                     </a>
                 </div>
@@ -128,7 +127,10 @@
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
-                        <a href="../login.php">Log Out</a>
+                    <ul class="navbar-nav float-right" style="margin-top: 15px;">
+                        <a href="../logout.php" class="btn btn-danger btn-xs" style="margin-right: 12px;">Log Out</a>
+                        <a href="../reset-password.php" class="btn btn-warning btn-xs">Rest</a>
+                    </ul>
                     </ul>
                 </div>
             </nav>
@@ -157,7 +159,7 @@
                                 <span class="hide-menu">Profile</span>
                             </a>
                         </li> -->
-                         <li class="sidebar-item">
+                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Teacher/index.php" aria-expanded="false">
                                 <i class="mdi mdi-arrange-bring-forward"></i>
                                 <span class="hide-menu">Teacher</span>
@@ -222,323 +224,124 @@
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
-            <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Email campaign chart -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Sales Ratio</h4>
-                                <div class="sales ct-charts mt-3"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title m-b-5">Referral Earnings</h5>
-                                <h3 class="font-light">$769.08</h3>
-                                <div class="m-t-20 text-center">
-                                    <div id="earnings"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title m-b-0">Users</h4>
-                                <h2 class="font-light">35,658 <span class="font-16 text-success font-medium">+23%</span></h2>
-                                <div class="m-t-30">
-                                    <div class="row text-center">
-                                        <div class="col-6 border-right">
-                                            <h4 class="m-b-0">58%</h4>
-                                            <span class="font-14 text-muted">New Users</span>
-                                        </div>
-                                        <div class="col-6">
-                                            <h4 class="m-b-0">42%</h4>
-                                            <span class="font-14 text-muted">Repeat Users</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- Email campaign chart -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Ravenue - page-view-bounce rate -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <!-- column -->
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Latest Sales</h4>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th class="border-top-0">NAME</th>
-                                            <th class="border-top-0">STATUS</th>
-                                            <th class="border-top-0">DATE</th>
-                                            <th class="border-top-0">PRICE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Elite admin</td>
-                                            <td><span class="label label-success label-rounded">SALE</span> </td>
-                                            <td class="txt-oflo">April 18, 2017</td>
-                                            <td><span class="font-medium">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Real Homes WP Theme</td>
-                                            <td><span class="label label-info label-rounded">EXTENDED</span></td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="font-medium">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Ample Admin</td>
-                                            <td><span class="label label-purple label-rounded">Tax</span></td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="font-medium">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Medical Pro WP Theme</td>
-                                            <td><span class="label label-success label-rounded">Sale</span></td>
-                                            <td class="txt-oflo">April 20, 2017</td>
-                                            <td><span class="font-medium">-$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Hosting press html</td>
-                                            <td><span class="label label-success label-rounded">SALE</span></td>
-                                            <td class="txt-oflo">April 21, 2017</td>
-                                            <td><span class="font-medium">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <td class="txt-oflo">Digital Agency PSD</td>
-                                            <td><span class="label label-danger label-rounded">Tax</span> </td>
-                                            <td class="txt-oflo">April 23, 2017</td>
-                                            <td><span class="font-medium">-$14</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- Ravenue - page-view-bounce rate -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Recent comment and chats -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <!-- column -->
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Recent Comments</h4>
-                            </div>
-                            <div class="comment-widgets" style="height:430px;">
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row m-t-0">
-                                    <div class="p-2">
-                                        <img src="../../assets/images/users/1.jpg" alt="user" width="50" class="rounded-circle">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h6 class="font-medium">James Anderson</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-primary">Pending</span>
-                                            <span class="action-icons">
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-pencil-alt"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-check"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-heart"></i>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2">
-                                        <img src="../../assets/images/users/4.jpg" alt="user" width="50" class="rounded-circle">
-                                    </div>
-                                    <div class="comment-text active w-100">
-                                        <h6 class="font-medium">Michael Jorden</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
-                                        <div class="comment-footer ">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-success label-rounded">Approved</span>
-                                            <span class="action-icons active">
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-pencil-alt"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="icon-close"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-heart text-danger"></i>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2">
-                                        <img src="../../assets/images/users/5.jpg" alt="user" width="50" class="rounded-circle">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h6 class="font-medium">Johnathan Doeting</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-danger">Rejected</span>
-                                            <span class="action-icons">
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-pencil-alt"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-check"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-heart"></i>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row m-t-0">
-                                    <div class="p-2">
-                                        <img src="../../assets/images/users/2.jpg" alt="user" width="50" class="rounded-circle">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h6 class="font-medium">Steve Jobs</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-primary">Pending</span>
-                                            <span class="action-icons">
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-pencil-alt"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-check"></i>
-                                                </a>
-                                                <a href="javascript:void(0)">
-                                                    <i class="ti-heart"></i>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- column -->
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Temp Guide</h4>
-                                <div class="d-flex align-items-center flex-row m-t-30">
-                                    <div class="display-5 text-info"><i class="wi wi-day-showers"></i> <span>73<sup>°</sup></span></div>
-                                    <div class="m-l-10">
-                                        <h3 class="m-b-0">Saturday</h3><small>Ahmedabad, India</small>
-                                    </div>
-                                </div>
-                                <table class="table no-border mini-table m-t-20">
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-muted">Wind</td>
-                                            <td class="font-medium">ESE 17 mph</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-muted">Humidity</td>
-                                            <td class="font-medium">83%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-muted">Pressure</td>
-                                            <td class="font-medium">28.56 in</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-muted">Cloud Cover</td>
-                                            <td class="font-medium">78%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <ul class="row list-style-none text-center m-t-30">
-                                    <li class="col-3">
-                                        <h4 class="text-info"><i class="wi wi-day-sunny"></i></h4>
-                                        <span class="d-block text-muted">09:30</span>
-                                        <h3 class="m-t-5">70<sup>°</sup></h3>
-                                    </li>
-                                    <li class="col-3">
-                                        <h4 class="text-info"><i class="wi wi-day-cloudy"></i></h4>
-                                        <span class="d-block text-muted">11:30</span>
-                                        <h3 class="m-t-5">72<sup>°</sup></h3>
-                                    </li>
-                                    <li class="col-3">
-                                        <h4 class="text-info"><i class="wi wi-day-hail"></i></h4>
-                                        <span class="d-block text-muted">13:30</span>
-                                        <h3 class="m-t-5">75<sup>°</sup></h3>
-                                    </li>
-                                    <li class="col-3">
-                                        <h4 class="text-info"><i class="wi wi-day-sprinkle"></i></h4>
-                                        <span class="d-block text-muted">15:30</span>
-                                        <h3 class="m-t-5">76<sup>°</sup></h3>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+        
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
 
+                /* Style inputs */
+                input[type=text],
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+
+                input[type=submit] {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+
+                /* Style the container/contact section */
+                .container {
+                    border-radius: 5px;
+                    background-color: #f2f2f2;
+                    padding: 10px;
+                
+                }
+                .row{
+                    border: 1px solid #a3a375;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                /* Create two columns that float next to eachother */
+                .column {
+                    float: left;
+                    width: 50%;
+                    margin-top: 6px;
+                    padding: 20px;
+                }
+
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 600px) {
+
+                    .column,
+                    input[type=submit] {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                }
+                input[type=text],[type=password] [type=select], select {
+                       width: 100%;
+                       padding: 12px 20px;
+                       margin: 8px 0;
+                       display: inline-block;
+                       border: 1px solid #000000;
+                       border-radius: 4px;
+                       box-sizing: border-box;
+                } 
+            </style>
+            <div class="container">
+                <div style="text-align:center">
+                    <h2>Contact Us</h2>
+                    <p>Student managemetn system can contact us: </p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="../../assets/images/login.jpg" style="width:100%", height="60%">
+                    </div>
+                    <div class="column">
+                        <form action="#">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="country">Category</label>
+                            <select id="country" name="country">
+                                <option value="australia">Teacher</option>
+                                <option value="canada">Student</option>
+                                <option value="canada">Security Card</option>
+                                <option value="canada">Parent</option>
+                                <option value="usa">Other</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <button class="btn btn-success">Submit</button>
+                        </form>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- Recent comment and chats -->
-                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by Team. Designed and Developed by
-                <a href="https://www.passerellesnumeriques.org/en/">PNC</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
-        </div>
+
+        <footer class="footer text-center">
+            All Rights Reserved by Team. Designed and Developed by
+            <a href="https://www.passerellesnumeriques.org/en/">PNC</a>.
+        </footer>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
+        <!-- End footer -->
         <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->

@@ -62,15 +62,7 @@
                                     required>
                             </div>
                         </div>
-                        <!-- <div style="height:10px;"></div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label class="control-label" style="position:relative; top:7px;">Profile Image:</label>
-                            </div>
-                            <div class="col-lg-8">
-                                <input type="file" class="filestyle" name="pimage" placeholder="Your Picture" />
-                            </div>
-                        </div> -->
+        
                 </div>
             </div>
             <div class="modal-footer">

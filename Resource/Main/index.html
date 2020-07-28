@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/student_image.jpg">
-    <title>Nice admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Student Management System</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -128,7 +128,8 @@
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
-                        <a href="../login.php">Log Out</a>
+                        <a href="../logout.php" class="btn btn-danger btn-xs" style="margin-right: 12px;">Log Out</a>
+                        <a href="../reset-password.php" class="btn btn-warning btn-xs">Rest</a>
                     </ul>
                 </div>
             </nav>
@@ -165,13 +166,13 @@
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Student/index.php" aria-expanded="false">
-                                <i class="mdi mdi-border-none"></i>
+                                <i class="mdi mdi-face"></i>
                                 <span class="hide-menu">Student</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Parent/index.php" aria-expanded="false">
-                                <i class="mdi mdi-face"></i>
+                                <i class="mdi mdi-account-network"></i>
                                 <span class="hide-menu">Parent</span>
                             </a>
                         </li>
@@ -236,7 +237,7 @@
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Sales Ratio</h4>
+                                <h4 class="card-title">Board Ratio</h4>
                                 <div class="sales ct-charts mt-3"></div>
                             </div>
                         </div>
@@ -244,8 +245,8 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title m-b-5">Referral Earnings</h5>
-                                <h3 class="font-light">$769.08</h3>
+                                <h5 class="card-title m-b-5">Teachers</h5>
+                                <h3 class="font-light">377</h3>
                                 <div class="m-t-20 text-center">
                                     <div id="earnings"></div>
                                 </div>
@@ -253,17 +254,17 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title m-b-0">Users</h4>
-                                <h2 class="font-light">35,658 <span class="font-16 text-success font-medium">+23%</span></h2>
+                                <h4 class="card-title m-b-0">Students</h4>
+                                <h2 class="font-light">35658 <span class="font-16 text-success font-medium">+45%</span></h2>
                                 <div class="m-t-30">
                                     <div class="row text-center">
                                         <div class="col-6 border-right">
                                             <h4 class="m-b-0">58%</h4>
-                                            <span class="font-14 text-muted">New Users</span>
+                                            <span class="font-14 text-muted">New Student</span>
                                         </div>
                                         <div class="col-6">
                                             <h4 class="m-b-0">42%</h4>
-                                            <span class="font-14 text-muted">Repeat Users</span>
+                                            <span class="font-14 text-muted">Student Exit</span>
                                         </div>
                                     </div>
                                 </div>
@@ -282,7 +283,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Latest Sales</h4>
+                                <h4 class="card-title">Latest On Board</h4>
                             </div>
                             <div class="table-responsive">
                                 <table class="table table-hover">
@@ -291,51 +292,51 @@
                                             <th class="border-top-0">NAME</th>
                                             <th class="border-top-0">STATUS</th>
                                             <th class="border-top-0">DATE</th>
-                                            <th class="border-top-0">PRICE</th>
+                                            <th class="border-top-0">YEAR</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Elite admin</td>
-                                            <td><span class="label label-success label-rounded">SALE</span> </td>
-                                            <td class="txt-oflo">April 18, 2017</td>
-                                            <td><span class="font-medium">$24</span></td>
+                                            <td class="txt-oflo">Virak</td>
+                                            <td><span class="label label-success label-rounded">Student</span> </td>
+                                            <td class="txt-oflo">April 18, 2019</td>
+                                            <td><span class="font-medium">Year three</span></td>
                                         </tr>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Real Homes WP Theme</td>
-                                            <td><span class="label label-info label-rounded">EXTENDED</span></td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="font-medium">$1250</span></td>
+                                            <td class="txt-oflo">Samai</td>
+                                            <td><span class="label label-success label-rounded">Student</span></td>
+                                            <td class="txt-oflo">April 19, 2019</td>
+                                            <td><span class="font-medium">Year three</span></td>
                                         </tr>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Ample Admin</td>
-                                            <td><span class="label label-purple label-rounded">Tax</span></td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="font-medium">$1250</span></td>
+                                            <td class="txt-oflo">Ramekh</td>
+                                            <td><span class="label label-success label-rounded">Student</span></td>
+                                            <td class="txt-oflo">April 19, 2019</td>
+                                            <td><span class="font-medium">Year Three</span></td>
                                         </tr>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Medical Pro WP Theme</td>
-                                            <td><span class="label label-success label-rounded">Sale</span></td>
-                                            <td class="txt-oflo">April 20, 2017</td>
-                                            <td><span class="font-medium">-$24</span></td>
+                                            <td class="txt-oflo">SreyNech</td>
+                                            <td><span class="label label-success label-rounded">Student</span></td>
+                                            <td class="txt-oflo">April 20, 2019</td>
+                                            <td><span class="font-medium">Year Three</span></td>
                                         </tr>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Hosting press html</td>
-                                            <td><span class="label label-success label-rounded">SALE</span></td>
-                                            <td class="txt-oflo">April 21, 2017</td>
-                                            <td><span class="font-medium">$24</span></td>
+                                            <td class="txt-oflo">User1</td>
+                                            <td><span class="label label-danger label-rounded">Admin</span></td>
+                                            <td class="txt-oflo">April 21, 2016</td>
+                                            <td><span class="font-medium">Fix Year</span></td>
                                         </tr>
                                         <tr>
                                             
-                                            <td class="txt-oflo">Digital Agency PSD</td>
-                                            <td><span class="label label-danger label-rounded">Tax</span> </td>
+                                            <td class="txt-oflo">Users2</td>
+                                            <td><span class="label label-danger label-rounded">Admin</span> </td>
                                             <td class="txt-oflo">April 23, 2017</td>
-                                            <td><span class="font-medium">-$14</span></td>
+                                            <td><span class="font-medium">Three year</span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -354,20 +355,45 @@
                     <div class="col-lg-6">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Recent Comments</h4>
+                                <h4 class="card-title">Recent Comments From Students</h4>
                             </div>
                             <div class="comment-widgets" style="height:430px;">
                                 <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row m-t-0">
+                                <div class="d-flex flex-row comment-row">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/1.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="../../assets/images/users/pic5.png" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
-                                        <h6 class="font-medium">James Anderson</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <h6 class="font-medium">Virak RIM</h6>
+                                        <span class="m-b-15 d-block">ជាបុរសសុភាពរាបសារ ចេះគោរពចាស់ទុំ​ និង​ ស្រឡាញ់់់ស្មោះងាប់ចោល។</span>
                                         <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-primary">Pending</span>
+                                            <span class="text-muted float-right">April 14, 2019</span>
+                                            <span class="label label-rounded label-success">Student</span>
+                                            <span class="action-icons">
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-pencil-alt"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-check"></i>
+                                                </a>
+                                                <a href="javascript:void(0)">
+                                                    <i class="ti-heart"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                    <div class="p-2">
+                                        <img src="../../assets/images/users/pic4.png" alt="user" width="50" class="rounded-circle">
+                                    </div>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium">Acencio or Kol Sokvibol</h6>
+                                        <span class="m-b-15 d-block">​ស្ដេចព្រានារី​ ញែរស្រីមិនរើសមុខ បើនិយាយរឿងសង្សារដូរដូចខោអាវ។</span>
+                                        <div class="comment-footer">
+                                            <span class="text-muted float-right">May 14, 2019</span>
+                                            <span class="label label-rounded label-success">Student</span>
                                             <span class="action-icons">
                                                 <a href="javascript:void(0)">
                                                     <i class="ti-pencil-alt"></i>
@@ -385,23 +411,23 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/4.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="../../assets/images/users/pic1.jpg" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text active w-100">
-                                        <h6 class="font-medium">Michael Jorden</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <h6 class="font-medium">SreyNech Chhum</h6>
+                                        <span class="m-b-15 d-block">She is the lazy student and lazy people in the world.</span>
                                         <div class="comment-footer ">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-success label-rounded">Approved</span>
+                                            <span class="text-muted float-right">April 14, 2019</span>
+                                            <span class="label label-success label-rounded">Student</span>
                                             <span class="action-icons active">
                                                 <a href="javascript:void(0)">
                                                     <i class="ti-pencil-alt"></i>
                                                 </a>
                                                 <a href="javascript:void(0)">
-                                                    <i class="icon-close"></i>
+                                                    <i class="ti-check"></i>
                                                 </a>
                                                 <a href="javascript:void(0)">
-                                                    <i class="ti-heart text-danger"></i>
+                                                    <i class="ti-heart"></i>
                                                 </a>
                                             </span>
                                         </div>
@@ -410,14 +436,14 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/5.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="../../assets/images/users/pic2.jpg" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
-                                        <h6 class="font-medium">Johnathan Doeting</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <h6 class="font-medium">Ramekh Chhoung</h6>
+                                        <span class="m-b-15 d-block">ជាបុរសសុភាពរាបសារ ចេះគោរពចាស់ទុំ​ និង​ ស្រឡាញ់់់ស្មោះងាប់ចោល។</span>
                                         <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-danger">Rejected</span>
+                                            <span class="text-muted float-right">April 14, 2019</span>
+                                            <span class="label label-rounded label-success">Student</span>
                                             <span class="action-icons">
                                                 <a href="javascript:void(0)">
                                                     <i class="ti-pencil-alt"></i>
@@ -435,14 +461,14 @@
                                 <!-- Comment Row -->
                                 <div class="d-flex flex-row comment-row m-t-0">
                                     <div class="p-2">
-                                        <img src="../../assets/images/users/2.jpg" alt="user" width="50" class="rounded-circle">
+                                        <img src="../../assets/images/users/pic3.jpg" alt="user" width="50" class="rounded-circle">
                                     </div>
                                     <div class="comment-text w-100">
-                                        <h6 class="font-medium">Steve Jobs</h6>
-                                        <span class="m-b-15 d-block">Lorem Ipsum is simply dummy text of the printing and type setting industry. </span>
+                                        <h6 class="font-medium">Samai Duch</h6>
+                                        <span class="m-b-15 d-block"> She is the lazy student and lazy people in the world. </span>
                                         <div class="comment-footer">
-                                            <span class="text-muted float-right">April 14, 2016</span>
-                                            <span class="label label-rounded label-primary">Pending</span>
+                                            <span class="text-muted float-right">April 14, 2019</span>
+                                            <span class="label label-rounded label-success">Student</span>
                                             <span class="action-icons">
                                                 <a href="javascript:void(0)">
                                                     <i class="ti-pencil-alt"></i>
@@ -468,7 +494,7 @@
                                 <div class="d-flex align-items-center flex-row m-t-30">
                                     <div class="display-5 text-info"><i class="wi wi-day-showers"></i> <span>73<sup>°</sup></span></div>
                                     <div class="m-l-10">
-                                        <h3 class="m-b-0">Saturday</h3><small>Ahmedabad, India</small>
+                                        <h3 class="m-b-0">Thurday</h3><small>Ahmedabad, Bang Kok</small>
                                     </div>
                                 </div>
                                 <table class="table no-border mini-table m-t-20">

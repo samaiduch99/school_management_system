@@ -16,14 +16,6 @@ $erow=$edit->fetch_assoc();
                 <div class="container-fluid">
                     <form method="POST" action="update.php?id=<?php echo $erow['id']; ?>" enctype="multipart/form-data">
 
-                        <!-- <div class="row">
-                            <div class="col-lg-12" align="center">
-                                <php $img = "http://localhost/php-crud-student/profile_images/".$row['id']. ".jpg";?>
-                                <img src='<php echo $img ?>' height="150px" width="170px" />
-
-                            </div>
-
-                        </div> -->
                         <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-4" align="left">
@@ -42,15 +34,7 @@ $erow=$edit->fetch_assoc();
                                 <?php echo $erow['gender']; ?>
                             </div>
                         </div>
-                        <div style="height:10px;"></div>
-                        <div class="row">
-                            <div class="col-lg-4" align="left">
-                                <label style="position:relative; top:7px;">Province:</label>
-                            </div>
-                            <div class="col-lg-8" align="left">
-                                <?php echo $erow['province']; ?>
-                            </div>
-                        </div>
+                     
                         <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-4" align="left">
@@ -61,6 +45,15 @@ $erow=$edit->fetch_assoc();
                             </div>
                         </div>
 
+                        <div style="height:10px;"></div>
+                        <div class="row">
+                            <div class="col-lg-4" align="left">
+                                <label style="position:relative; top:7px;">Province:</label>
+                            </div>
+                            <div class="col-lg-8" align="left">
+                                <?php echo $erow['province']; ?>
+                            </div>
+                        </div>
 
                         
 

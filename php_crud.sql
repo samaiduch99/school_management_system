@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2020 at 07:34 PM
+-- Generation Time: Jul 28, 2020 at 02:53 AM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.26
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,7 +40,9 @@ CREATE TABLE `classroom` (
 --
 
 INSERT INTO `classroom` (`id`, `class_name`, `floor`, `description`) VALUES
-(1, 'Java', 'First Floor', 'OOP Class');
+(1, 'Java', 'First Floor', 'OOP'),
+(3, 'Laravel', 'Third Floor', 'We learn about laravel lesion  '),
+(4, 'Laravel', 'Third Floor', 'OO');
 
 -- --------------------------------------------------------
 
@@ -62,7 +64,8 @@ CREATE TABLE `parent` (
 
 INSERT INTO `parent` (`id`, `name`, `gender`, `phone`, `province`) VALUES
 (1, 'Kan Nika', 'Female', '09876543', 'BB'),
-(2, 'samai', 'Male', '09876543', 'PP');
+(3, 'Virak', 'Male', '0969645116', 'Pursat'),
+(4, 'Samai kmav', 'Female', '0886445215', 'BTB');
 
 -- --------------------------------------------------------
 
@@ -88,14 +91,15 @@ INSERT INTO `student` (`id`, `name`, `gender`, `address`, `phone`, `post`) VALUE
 (8, 'Virak RIM', 'Male', 'Phnom Penh ', '0969645116', 'SNA-2019'),
 (10, 'Virak', 'Male', 'Phnom Penh ', '08484894', 'WEB-Programming'),
 (12, 'Virak', 'Female', 'Phnom Penh ', '0969645116', 'WEB'),
-(13, 'Virak', 'Male', 'Phnom Penh ', '0969645116', 'WEB-Programming'),
+(13, 'Virak', 'Male', 'Phnom Penh ', '0969645116', 'WEB-Program'),
 (19, 'Virak Ratha', 'Male', 'Phnom Penh ', '0969645116', 'WEB-Programming'),
 (20, 'Kara', 'Male', 'Phnom Penh ', '0969645116', 'WEB'),
 (21, 'Java', 'Male', 'BTB', '0886445216', 'SNA'),
 (22, 'Virak RIM', 'Male', 'Phnom Penh', '08484894', 'WEB'),
 (24, 'Virak', 'Male', 'Phnom Penh ', '0969645116', 'WEB-Programming'),
 (26, 'samai', 'Female', 'btb', '098765432', 'Student'),
-(27, 'samai', 'Male', 'btb', '0987654', 'Student');
+(27, 'samai', 'Male', 'btb', '0987654', 'Student'),
+(28, 'Virak', 'Male', 'Phnom Penh ', '0969645116', 'WEB-Programming');
 
 -- --------------------------------------------------------
 
@@ -118,26 +122,31 @@ CREATE TABLE `teacher` (
 
 INSERT INTO `teacher` (`tea_id`, `tea_name`, `tea_email`, `gender`, `age`, `phone`) VALUES
 (2, 'Chom chan', 'chom.chan@gmail.com', 'Female', 20, 39933983),
-(4, 'Van Dara', '', 'Male', 34, 987654);
+(5, 'Van Dara', 'chom.chan@gmail.com', 'Male', 24, 969645116);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_login`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user_login` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_login`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `user_login` (`id`, `username`, `password`) VALUES
-(1, 'samai', '1234567');
+INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
+(1, 'virak rim', '$2y$10$eiXGDaZxiy6WklJeOkOxUOCEnbICBdLwDmUeqsdUIBtYIq0sESiQa', '2020-07-27 10:17:18'),
+(2, 'rvirak1', '$2y$10$QENOH1YtBWH/rjgOVBYx3uIC6ziuPCze90/MJ/AOYxOk65q7.E/ym', '2020-07-27 10:17:42'),
+(3, 'rvirak2', '$2y$10$QcQ3bVOdQizD4r0C0PyY7ecEQAkhVDoujVCNJxNAYcXBTkfCiTMDW', '2020-07-27 10:22:17'),
+(4, 'rvirak3', '$2y$10$kerYF3NBplNZM/pd7cNSIe.ikLHweJ5Q2IYn.3WC/AB0QBrbHCml6', '2020-07-27 16:23:37'),
+(5, 'samai', '$2y$10$fsR2Zn7yyMjDBEyBiADyGezGSogQHemviY8FKZfHCsd2oe.UBi3Ni', '2020-07-27 17:51:05');
 
 --
 -- Indexes for dumped tables
@@ -168,10 +177,11 @@ ALTER TABLE `teacher`
   ADD PRIMARY KEY (`tea_id`);
 
 --
--- Indexes for table `user_login`
+-- Indexes for table `users`
 --
-ALTER TABLE `user_login`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -181,31 +191,31 @@ ALTER TABLE `user_login`
 -- AUTO_INCREMENT for table `classroom`
 --
 ALTER TABLE `classroom`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `parent`
 --
 ALTER TABLE `parent`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `tea_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `tea_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `user_login`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

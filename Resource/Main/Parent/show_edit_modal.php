@@ -46,16 +46,6 @@ $erow=$edit->fetch_assoc();
                         <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-4" align="left">
-                                <label style="position:relative; top:7px;">Province:</label>
-                            </div>
-                            <div class="col-lg-8">
-                                <input type="text" name="province" class="form-control"
-                                    value="<?php echo $erow['province']; ?>" required>
-                            </div>
-                        </div>
-                        <div style="height:10px;"></div>
-                        <div class="row">
-                            <div class="col-lg-4" align="left">
                                 <label class="control-label" style="position:relative; top:7px;">Phone:</label>
                             </div>
                             <div class="col-lg-8">
@@ -63,22 +53,17 @@ $erow=$edit->fetch_assoc();
                                     value="<?php echo $erow['phone']; ?>" required>
                             </div>
                         </div>
-                        
 
-                        <!-- <div style="height:10px;"></div>
+                        <div style="height:10px;"></div>
                         <div class="row">
                             <div class="col-lg-4" align="left">
-                                <label class="control-label" style="position:relative; top:7px;">Profile Image:
-                                </label>
+                                <label style="position:relative; top:7px;">Province:</label>
                             </div>
-
                             <div class="col-lg-8">
-
-                                <input type="file" class="filestyle" name="pimage" />
-
+                                <input type="text" name="province" class="form-control"
+                                    value="<?php echo $erow['province']; ?>" required>
                             </div>
-
-                        </div> -->
+                        </div>
 
                 </div>
             </div>

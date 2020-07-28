@@ -74,21 +74,6 @@ $erow=$edit->fetch_assoc();
                             </div>
                         </div>
 
-                        <!-- <div style="height:10px;"></div>
-                        <div class="row">
-                            <div class="col-lg-4" align="left">
-                                <label class="control-label" style="position:relative; top:7px;">Profile Image:
-                                </label>
-                            </div>
-
-                            <div class="col-lg-8">
-
-                                <input type="file" class="filestyle" name="pimage" />
-
-                            </div>
-
-                        </div> -->
-
                 </div>
             </div>
             <div class="modal-footer">
